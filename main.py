@@ -10,7 +10,9 @@ from telegram.ext import (
 )
 
 # Replace with your BotFather token
-TOKEN = "8623747480:AAGJPqW95u4otB2ZQxaZ0MrMvRbJmyyOaTQ"
+import os
+
+TOKEN = os.environ["BOT_TOKEN"]
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
